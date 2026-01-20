@@ -6,16 +6,34 @@ import Services from "./components/sections/Services";
 import Stats from "./components/sections/Stats";
 import Testimonials from "./components/sections/Testimonials";
 import Footer from "./components/common/Footer";
+import AboutPage from "./pages/AboutPage";
+import ProductsPage from "./pages/ProductsPage";
+import LearnPage from "./pages/LearnPage";
+import ContactPage from "./pages/ContactPage";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Stats />
-      <Testimonials />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <Services />
+              <Stats />
+              <Testimonials />
+            </>
+          }
+        />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/learn" element={<LearnPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
       <Footer />
     </>
   );
