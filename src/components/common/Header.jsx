@@ -14,7 +14,7 @@ const Header = () => {
      }`;
 
   return (
-    <nav className="bg-white text-green-900 z-50 shadow">
+    <nav className="bg-white fixed top-0 left-0 right-0 text-green-900 z-50 shadow">
       <div className="container mx-auto px-6 py-4">
         <div className="lg:flex lg:items-center lg:justify-between">
           {/* Logo & Mobile Button */}
@@ -57,10 +57,10 @@ const Header = () => {
               <NavLink to="/about" className={navLinkClass}>
                 About
               </NavLink>
-              <NavLink to="/services" className={navLinkClass}>
-                Services
+              <NavLink to="/products" className={navLinkClass}>
+                Products
               </NavLink>
-              <NavLink to="/education" className={navLinkClass}>
+              <NavLink to="/learn" className={navLinkClass}>
                 Learn
               </NavLink>
               <NavLink to="/contact" className={navLinkClass}>

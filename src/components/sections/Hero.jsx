@@ -6,22 +6,21 @@ const slides = [
     title: "Reliable Poultry Incubators",
     description:
       "Increase hatch rates with modern incubators designed for temperature control, humidity balance, and efficiency for both small and commercial poultry farmers.",
-    image: "/logo.jpeg",
+    image: "/incubator.png",
     cta: "View Incubators",
   },
   {
     title: "Modern Farm Technology",
     description:
       "We supply durable and efficient agricultural equipment that helps farmers reduce losses, save time, and improve productivity.",
-    image:
-      "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1350&auto=format&fit=crop",
+    image: "/grinder.png",
     cta: "Our Equipment",
   },
   {
     title: "Support for Every Farmer",
     description:
       "From equipment selection to setup guidance, Deof Farmtech Systems supports farmers with practical knowledge and reliable after-sales service.",
-    image: "/logo.jpeg",
+    image: "/planter.png",
     cta: "Get Support",
   },
 ];
@@ -38,7 +37,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <header className="bg-white">
+    <header className="bg-green-50 pt-15 lg:pt-32">
+      {" "}
+      {/* Added top padding for fixed header */}
       <div className="container mx-auto px-6 py-12 lg:h-136 lg:flex lg:items-center">
         {/* Text Content */}
         <div className="w-full lg:w-1/2">

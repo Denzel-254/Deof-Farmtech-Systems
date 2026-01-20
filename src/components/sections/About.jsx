@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
             className="w-full lg:w-1/2"
           >
             <img
-              src="/logo.jpeg"
+              src="/tractor.png"
               alt="Agricultural equipment and farming technology"
               className="w-full h-80 lg:h-104 object-cover rounded-lg shadow-md"
             />
@@ -49,12 +50,12 @@ const About = () => {
             </p>
 
             <div className="mt-8">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center px-6 py-3 text-sm font-semibold text-green-900 bg-yellow-400 rounded-lg hover:bg-yellow-500 transition"
               >
                 Talk to Us
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

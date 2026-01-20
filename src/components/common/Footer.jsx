@@ -29,10 +29,10 @@ const Footer = () => {
             About
           </NavLink>
           <NavLink
-            to="/services"
+            to="/products"
             className="text-yellow-400 text-sm hover:text-yellow-300 transition-colors"
           >
-            Services
+            Products
           </NavLink>
           <NavLink
             to="/contact"

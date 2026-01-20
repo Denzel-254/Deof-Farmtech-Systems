@@ -8,7 +8,7 @@ import {
 
 const Services = () => {
   return (
-    <section className="bg-gray-100 py-16">
+    <section className="bg-green-50 py-16">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div
@@ -111,7 +111,7 @@ const Services = () => {
           {/* Image */}
           <div className="hidden lg:flex lg:w-1/2 lg:justify-center">
             <img
-              src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1350&auto=format&fit=crop"
+              src="/planter.png"
               alt="Modern agricultural equipment"
               className="w-md h-112 object-cover rounded-2xl shadow-md"
             />

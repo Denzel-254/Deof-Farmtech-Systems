@@ -21,7 +21,7 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-green-50 py-16">
       <div className="container mx-auto px-6">
         <motion.div
           initial="hidden"
