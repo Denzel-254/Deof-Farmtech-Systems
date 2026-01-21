@@ -116,7 +116,7 @@ const ContactPage = () => {
               <div>
                 <h4 className="font-semibold text-green-900">Location</h4>
                 <p className="text-green-700">
-                  Chai Logistic off Old Mobasa Road, Embakasi-Nairobi
+                  Chai Logistic off Old Mombasa Road, Embakasi-Nairobi
                 </p>
               </div>
             </div>
@@ -128,7 +128,7 @@ const ContactPage = () => {
               Our team is ready to assist you with product selection and usage.
             </p>
             <a
-              href="https://wa.me/2547790407682?text=Hello%20Deof%20Farmtech%20Systems,%20I%20would%20like%20to%20inquire%20about%20your%20equipment."
+              href="https://wa.me/254790407682?text=Hello%20Deof%20Farmtech%20Systems,%20I%20would%20like%20to%20inquire%20about%20your%20equipment."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-4 bg-yellow-400 text-green-900 font-semibold rounded-lg hover:bg-yellow-500 transition"
