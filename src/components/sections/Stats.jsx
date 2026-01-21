@@ -14,8 +14,8 @@ const stats = [
   },
   {
     icon: <FaMapMarkerAlt size={28} />,
-    value: "Coast Region",
-    label: "Based in Mombasa",
+    value: " Region",
+    label: "Based in Nairobi",
   },
 ];
 

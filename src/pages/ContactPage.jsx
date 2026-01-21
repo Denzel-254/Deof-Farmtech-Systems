@@ -106,7 +106,7 @@ const ContactPage = () => {
               <FaEnvelope className="text-yellow-400 mt-1" size={24} />
               <div>
                 <h4 className="font-semibold text-green-900">Email</h4>
-                <p className="text-green-700">info@deoffarmtech.co.ke</p>
+                <p className="text-green-700">deofpoultrytech@gmail.com</p>
               </div>
             </div>
 
@@ -115,7 +115,9 @@ const ContactPage = () => {
               <FaMapMarkerAlt className="text-yellow-400 mt-1" size={24} />
               <div>
                 <h4 className="font-semibold text-green-900">Location</h4>
-                <p className="text-green-700">Mombasa, Kenya</p>
+                <p className="text-green-700">
+                  Chai Logistic off Old Mobasa Road, Embakasi-Nairobi
+                </p>
               </div>
             </div>
           </div>
@@ -126,7 +128,7 @@ const ContactPage = () => {
               Our team is ready to assist you with product selection and usage.
             </p>
             <a
-              href="https://wa.me/2547 790 407682"
+              href="https://wa.me/2547790407682?text=Hello%20Deof%20Farmtech%20Systems,%20I%20would%20like%20to%20inquire%20about%20your%20equipment."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-4 bg-yellow-400 text-green-900 font-semibold rounded-lg hover:bg-yellow-500 transition"

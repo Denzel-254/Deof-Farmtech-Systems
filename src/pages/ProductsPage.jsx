@@ -9,9 +9,9 @@ const products = [
       "Reliable automatic poultry incubator designed for small-scale farmers, ensuring high hatch rates and energy efficiency.",
   },
   {
-    name: "Poultry Egg Incubator (112 Eggs)",
-    price: "KES 28,000",
-    image: "/incubator.png",
+    name: "Poultry Egg Incubator (528 Eggs)",
+    price: "KES 54,000",
+    image: "/incubator1.png",
     description:
       "Medium-capacity incubator suitable for growing poultry farms, featuring temperature and humidity control.",
   },
@@ -25,7 +25,7 @@ const products = [
   {
     name: "Animal Feed Grinder",
     price: "KES 42,000",
-    image: "/incubator.png",
+    image: "/crusher.png",
     description:
       "Durable feed grinder for producing quality animal feeds for poultry and livestock farming.",
   },

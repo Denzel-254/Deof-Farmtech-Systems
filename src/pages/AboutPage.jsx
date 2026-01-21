@@ -31,7 +31,7 @@ const AboutPage = () => {
             <div className="w-20 h-1 bg-yellow-400 rounded-full mb-6"></div>
             <p className="text-green-700 leading-relaxed mb-4">
               Deof Farmtech Systems is a trusted agricultural equipment supplier
-              based in Mombasa, Kenya. Our mission is to empower farmers with
+              based in Nairobi, Kenya. Our mission is to empower farmers with
               modern, reliable, and easy-to-use technologies that boost
               productivity and profitability.
             </p>
@@ -56,7 +56,7 @@ const AboutPage = () => {
               Our Journey
             </h3>
             <p className="text-green-700 leading-relaxed mb-4">
-              Founded in Mombasa, Deof Farmtech Systems started with a vision to
+              Founded in Nairobi, Deof Farmtech Systems started with a vision to
               bridge the gap between farmers and modern farming technology. Over
               the years, we’ve grown into a leading supplier of quality
               agricultural equipment, helping hundreds of farmers increase

@@ -102,7 +102,7 @@ const Services = () => {
               </h3>
 
               <p className="text-green-700">
-                Based in Mombasa, we offer timely delivery and ongoing support
+                Based in Nairobi, we offer timely delivery and ongoing support
                 to ensure farmers receive reliable service when they need it.
               </p>
             </div>

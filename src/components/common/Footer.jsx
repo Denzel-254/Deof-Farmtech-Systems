@@ -55,7 +55,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row sm:justify-between items-center text-sm text-yellow-400">
           <p>
             © {new Date().getFullYear()} Deof Farmtech Systems. All Rights
-            Reserved.
+            Reserved. - By Calvin Web Solutions
           </p>
 
           {/* Social Icons */}

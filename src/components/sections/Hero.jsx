@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -8,6 +9,7 @@ const slides = [
       "Increase hatch rates with modern incubators designed for temperature control, humidity balance, and efficiency for both small and commercial poultry farmers.",
     image: "/incubator.png",
     cta: "View Incubators",
+    link: "/products",
   },
   {
     title: "Modern Farm Technology",
@@ -15,6 +17,7 @@ const slides = [
       "We supply durable and efficient agricultural equipment that helps farmers reduce losses, save time, and improve productivity.",
     image: "/grinder.png",
     cta: "Our Equipment",
+    link: "/products",
   },
   {
     title: "Support for Every Farmer",
@@ -22,6 +25,7 @@ const slides = [
       "From equipment selection to setup guidance, Deof Farmtech Systems supports farmers with practical knowledge and reliable after-sales service.",
     image: "/planter.png",
     cta: "Get Support",
+    link: "/contact",
   },
 ];
 
@@ -31,15 +35,13 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % slides.length);
-    }, 5000); // slide every 5 seconds
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <header className="bg-green-50 pt-15 lg:pt-32">
-      {" "}
-      {/* Added top padding for fixed header */}
+    <header className="bg-green-50 pt-28 lg:pt-32">
       <div className="container mx-auto px-6 py-12 lg:h-136 lg:flex lg:items-center">
         {/* Text Content */}
         <div className="w-full lg:w-1/2">
@@ -59,9 +61,12 @@ const Hero = () => {
               <p className="mt-4 text-green-700">{slides[index].description}</p>
 
               <div className="mt-6">
-                <button className="px-6 py-3 text-sm font-semibold text-green-900 bg-yellow-400 rounded-lg hover:bg-yellow-500 transition">
+                <Link
+                  to={slides[index].link}
+                  className="inline-block px-6 py-3 text-sm font-semibold text-green-900 bg-yellow-400 rounded-lg hover:bg-yellow-500 transition"
+                >
                   {slides[index].cta}
-                </button>
+                </Link>
               </div>
             </motion.div>
           </AnimatePresence>
