@@ -103,7 +103,7 @@ const AboutPage = () => {
               className="mx-auto mb-4 h-32 object-contain"
             />
             <h4 className="text-xl font-semibold text-green-900 mb-2">
-              Poultry Incubators
+              Poultry Equipments
             </h4>
             <p className="text-green-700 leading-relaxed">
               High-quality incubators designed for efficient egg hatching,
@@ -123,7 +123,7 @@ const AboutPage = () => {
               className="mx-auto mb-4 h-32 object-contain"
             />
             <h4 className="text-xl font-semibold text-green-900 mb-2">
-              Seed Planters
+              Feed Processing Equipments
             </h4>
             <p className="text-green-700 leading-relaxed">
               Efficient seed planting machines that save time and improve crop
@@ -143,7 +143,7 @@ const AboutPage = () => {
               className="mx-auto mb-4 h-32 object-contain"
             />
             <h4 className="text-xl font-semibold text-green-900 mb-2">
-              Farmer Support
+              Farm Waste & management Equipments
             </h4>
             <p className="text-green-700 leading-relaxed">
               Personalized guidance to help farmers make the most of our

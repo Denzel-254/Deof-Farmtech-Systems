@@ -2,32 +2,103 @@ import { motion } from "framer-motion";
 
 const products = [
   {
-    name: "Poultry Egg Incubator (56 Eggs)",
-    price: "KES 18,000",
-    image: "/incubator.png",
+    name: "Feed Pelleting Machine (400kg/hour)",
+    price: "KES 210,500",
+    image: "/feed1.jpeg",
+    category: "Feed Processing Equipment",
+    capacity: "300–400 kg/hour",
+    motorPower: "16 HP, 3-Phase",
+    pelletSize: "2–6 mm (Customizable Dies)",
+    dimensions: "1300 × 460 × 1050 mm",
+    weight: "220 kg",
+    usage: ["Poultry", "Dairy", "Pigs", "Rabbits"],
     description:
-      "Reliable automatic poultry incubator designed for small-scale farmers, ensuring high hatch rates and energy efficiency.",
+      "The 400kg/hour Feed Pelleting Machine is designed for expanding farms and small-scale feed businesses that demand high efficiency and productivity. It converts powdered feed into dense, uniform pellets, improving feed intake, animal growth, and reducing wastage. Built for durability and long-term use, this heavy-duty machine ensures professional and consistent feed production.",
+    benefits: [
+      "High-volume pellet production for growing farms",
+      "Uniform pellets improve digestion and feed efficiency",
+      "Reduces dependency on commercial feeds",
+      "Heavy-duty construction for long-term durability",
+      "Stable operation with powerful 3-phase motor",
+      "Customizable pellet sizes for different livestock needs",
+      "Cost-saving through in-house feed production",
+    ],
+    notes:
+      "Price subject to change based on market conditions and availability.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
   {
-    name: "Poultry Egg Incubator (528 Eggs)",
-    price: "KES 54,000",
-    image: "/incubator1.png",
+    name: "Feed Pelleting Machine (600kg/hour)",
+    price: "KES 275,500",
+    image: "/feed2.jpeg",
+    category: "Feed Processing Equipment",
+    capacity: "600 kg/hour",
+    motorPower: "15 kW (20 HP), 3-Phase",
+    pelletSize: "2.5–8 mm (Customizable Dies)",
+    dimensions: "1400 × 650 × 1450 mm",
+    weight: "320 kg",
+    usage: ["Poultry", "Dairy", "Pigs", "Rabbits"],
     description:
-      "Medium-capacity incubator suitable for growing poultry farms, featuring temperature and humidity control.",
+      "The 600kg/hour Feed Pelleting Machine is designed for large farms and professional feed producers who require high output, uniform, and durable pellets. It efficiently converts powdered feed into dense, high-quality pellets, improving animal nutrition while reducing feed wastage. Built with a powerful 3-phase motor and heavy-duty frame, this machine delivers consistent performance and long-term reliability.",
+    benefits: [
+      "High-volume pellet production for large and expanding operations",
+      "Uniform pellets improve digestion and feed intake",
+      "Reduces dependency on commercial feeds",
+      "Heavy-duty construction ensures stability and long lifespan",
+      "Customizable pellet sizes (2.5–8 mm) for different livestock needs",
+      "Saves time, effort, and operational costs in large-scale feed production",
+    ],
+    notes:
+      "Price subject to change based on market conditions and availability.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
   {
     name: "Seed Planter Machine",
     price: "KES 35,000",
     image: "/incubator.png",
+    category: "Crop Farming Equipment",
+    capacity: "Manual / Small-Scale Operation",
+    motorPower: "Manual",
+    pelletSize: "N/A",
+    dimensions: "Standard Portable Size",
+    weight: "Lightweight",
+    usage: ["Maize", "Beans", "Vegetables"],
     description:
       "Efficient seed planting equipment that saves time and improves crop spacing for better yields.",
+    benefits: [
+      "Improves planting accuracy and spacing",
+      "Reduces labor and planting time",
+      "Ideal for small-scale farmers",
+      "Easy to operate and maintain",
+    ],
+    notes: "Specifications may vary depending on model and availability.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
   {
     name: "Animal Feed Grinder",
     price: "KES 42,000",
     image: "/crusher.png",
+    category: "Feed Processing Equipment",
+    capacity: "Medium-Scale Grinding",
+    motorPower: "Electric Motor",
+    pelletSize: "Powdered Feed Output",
+    dimensions: "Compact Floor Model",
+    weight: "Moderate Weight",
+    usage: ["Poultry", "Cattle", "Goats", "Pigs"],
     description:
       "Durable feed grinder for producing quality animal feeds for poultry and livestock farming.",
+    benefits: [
+      "Produces fine, consistent feed",
+      "Improves feed mixing efficiency",
+      "Reduces cost of commercial feeds",
+      "Strong and durable build",
+    ],
+    notes: "Specifications may vary depending on model and availability.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
 ];
 
@@ -59,14 +130,12 @@ const ProductsPage = () => {
               viewport={{ once: true }}
               className="bg-white rounded-lg shadow-md hover:shadow-xl transition overflow-hidden"
             >
-              {/* Product Image */}
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full h-56 object-cover"
+                className="w-full h-56 object-contain"
               />
 
-              {/* Product Content */}
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-green-900">
                   {product.name}
@@ -74,6 +143,10 @@ const ProductsPage = () => {
 
                 <p className="mt-2 text-green-700 text-sm leading-relaxed">
                   {product.description}
+                </p>
+
+                <p className="mt-4 text-xs text-green-600 whitespace-pre-line">
+                  {product.contactInfo}
                 </p>
 
                 <div className="mt-4 flex items-center justify-between">
