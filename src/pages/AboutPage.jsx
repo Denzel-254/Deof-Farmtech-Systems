@@ -13,7 +13,7 @@ const AboutPage = () => {
             className="w-full lg:w-1/2"
           >
             <img
-              src="/grinder.png" // Replace with an actual farm or equipment image
+              src="/cube1.jpeg" // Replace with an actual farm or equipment image
               alt="Deof Farmtech Systems"
               className="rounded-lg shadow-lg w-full h-80 lg:h-96 object-cover"
             />
@@ -76,7 +76,7 @@ const AboutPage = () => {
             className="w-full lg:w-1/2"
           >
             <img
-              src="/tractor.png" // Replace with an image showing farmers or fieldwork
+              src="/pellet1.jpeg" // Replace with an image showing farmers or fieldwork
               alt="Our Journey"
               className="rounded-lg shadow-lg w-full h-80 lg:h-96 object-cover"
             />
@@ -98,7 +98,7 @@ const AboutPage = () => {
             className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition"
           >
             <img
-              src="/incubator.png" // Replace with actual product image
+              src="/bator2.jpeg" // Replace with actual product image
               alt="Poultry Incubators"
               className="mx-auto mb-4 h-32 object-contain"
             />
@@ -118,8 +118,8 @@ const AboutPage = () => {
             className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition"
           >
             <img
-              src="/planter.png" // Replace with actual product image
-              alt="Seed Planters"
+              src="/chopper3.jpeg" // Replace with actual product image
+              alt="Chopper"
               className="mx-auto mb-4 h-32 object-contain"
             />
             <h4 className="text-xl font-semibold text-green-900 mb-2">
@@ -138,7 +138,7 @@ const AboutPage = () => {
             className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition"
           >
             <img
-              src="/incubator.png" // Replace with customer support or field guidance image
+              src="/dryer.jpeg" // Replace with customer support or field guidance image
               alt="Farmer Support"
               className="mx-auto mb-4 h-32 object-contain"
             />

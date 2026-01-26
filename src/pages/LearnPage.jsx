@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const lessons = [
   {
     title: "How to Use a Poultry Egg Incubator",
-    image: "/one.png",
+    image: "/bator3.jpeg",
     description:
       "Learn the correct steps for setting up, operating, and maintaining a poultry egg incubator to achieve high hatch rates.",
     points: [
@@ -13,27 +13,28 @@ const lessons = [
     ],
   },
   {
-    title: "Proper Use of a Seed Planter Machine",
-    image: "/planter.png",
-    description:
-      "Understand how to prepare your land and operate a seed planter for uniform planting and better crop yields.",
-    points: [
-      "Land preparation tips",
-      "Seed spacing and depth adjustment",
-      "Post-planting maintenance",
-    ],
-  },
-  {
-    title: "Using a Feed Grinder for Poultry & Livestock",
-    image: "/tractor.png",
-    description:
-      "Learn how to safely operate a feed grinder to produce quality animal feed for improved growth and productivity.",
-    points: [
-      "Feed ingredient selection",
-      "Grinding consistency",
-      "Safety and machine care",
-    ],
-  },
+  title: "Proper Use of an Automatic Manure Dryer",
+  image: "/dryer.jpeg",
+  description:
+    "Learn how to efficiently operate an automatic manure dryer to reduce moisture content, control odor, and convert livestock waste into usable organic fertilizer.",
+  points: [
+    "Correct loading and moisture control",
+    "Monitoring temperature and drying cycles",
+    "Routine cleaning and maintenance",
+  ],
+},
+{
+  title: "Efficient Silage Preparation & Handling",
+  image: "/silage1.jpeg",
+  description:
+    "Understand the correct process of chopping, baling, and storing silage to preserve nutrients and improve livestock feed quality.",
+  points: [
+    "Choosing the right fodder materials",
+    "Proper chopping size and baling techniques",
+    "Safe operation and equipment care",
+  ],
+},
+
 ];
 
 const LearnPage = () => {

@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaBars, FaTimes, FaFacebook, FaGithub } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaFacebook,
+  FaInstagram,
+  FaTiktok,
+} from "react-icons/fa";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,19 +77,33 @@ const Header = () => {
             {/* Social Icons */}
             <div className="flex justify-center mt-6 lg:mt-0 lg:ml-6">
               <a
-                href="#"
+                href="https://www.facebook.com/share/1BoagBFqfF/"
                 className="mx-2 text-green-700 hover:text-yellow-500 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
               >
                 <FaFacebook size={18} />
               </a>
 
               <a
-                href="#"
+                href="https://www.instagram.com/invites/contact/?igsh=bse7k3xgran9&utm_content=1cnr1p3"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mx-2 text-green-700 hover:text-yellow-500 transition-colors"
-                aria-label="Github"
+                aria-label="Instagram"
               >
-                <FaGithub size={18} />
+                <FaInstagram size={18} />
+              </a>
+
+              <a
+                href="https://www.tiktok.com/@kebanedanielgmail.com?_r=1&_t=ZS-93MqUnW2SHZ"
+                className="mx-2 text-green-700 hover:text-yellow-500 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Tiktok"
+              >
+                <FaTiktok size={18} />
               </a>
             </div>
           </div>

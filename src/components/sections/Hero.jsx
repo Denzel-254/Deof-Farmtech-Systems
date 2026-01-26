@@ -7,7 +7,7 @@ const slides = [
     title: "Reliable Poultry Incubators",
     description:
       "Increase hatch rates with modern incubators designed for temperature control, humidity balance, and efficiency for both small and commercial poultry farmers.",
-    image: "/incubator.png",
+    image: "/bator6.jpeg",
     cta: "View Incubators",
     link: "/products",
   },
@@ -15,7 +15,7 @@ const slides = [
     title: "Modern Farm Technology",
     description:
       "We supply durable and efficient agricultural equipment that helps farmers reduce losses, save time, and improve productivity.",
-    image: "/grinder.png",
+    image: "/silage3.jpeg",
     cta: "Our Equipment",
     link: "/products",
   },
@@ -23,7 +23,7 @@ const slides = [
     title: "Support for Every Farmer",
     description:
       "From equipment selection to setup guidance, Deof Farmtech Systems supports farmers with practical knowledge and reliable after-sales service.",
-    image: "/planter.png",
+    image: "/bator1.jpeg",
     cta: "Get Support",
     link: "/contact",
   },

@@ -111,7 +111,7 @@ const Services = () => {
           {/* Image */}
           <div className="hidden lg:flex lg:w-1/2 lg:justify-center">
             <img
-              src="/planter.png"
+              src="/pellet2.jpeg"
               alt="Modern agricultural equipment"
               className="w-md h-112 object-cover rounded-2xl shadow-md"
             />

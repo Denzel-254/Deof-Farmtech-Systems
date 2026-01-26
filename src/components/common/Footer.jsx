@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -61,25 +61,31 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex gap-4 mt-4 sm:mt-0 text-yellow-400">
             <a
-              href="#"
+              href="https://www.facebook.com/share/1BoagBFqfF/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
               className="hover:text-yellow-300 transition-colors"
             >
               <FaFacebookF size={20} />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/invites/contact/?igsh=bse7k3xgran9&utm_content=1cnr1p3"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Github"
               className="hover:text-yellow-300 transition-colors"
             >
-              <FaGithub size={20} />
+              <FaInstagram size={20} />
             </a>
             <a
-              href="#"
+              href=" https://www.tiktok.com/@kebanedanielgmail.com?_r=1&_t=ZS-93MqUnW2SHZ"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Twitter"
               className="hover:text-yellow-300 transition-colors"
             >
-              <FaTwitter size={20} />
+              <FaTiktok size={20} />
             </a>
           </div>
         </div>
