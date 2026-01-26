@@ -4,24 +4,24 @@ import { motion, AnimatePresence } from "framer-motion";
 const testimonials = [
   {
     image:
-      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80",
+      "/lucy.jpg",
     text: "Deof Farmtech’s poultry incubators completely transformed our farm operations. We now hatch eggs more efficiently and with minimal losses.",
     name: "Grace Mwikali",
-    role: "Poultry Farmer, Mombasa",
+    role: "Poultry Farmer",
   },
   {
     image:
       "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&auto=format&fit=crop&w=880&q=80",
     text: "The guidance and training provided by Deof Farmtech helped us understand how to use modern farm equipment effectively. Our yield increased significantly.",
-    name: "David Ochieng",
-    role: "Commercial Farmer, Kilifi",
+    name: "David Baker",
+    role: "Commercial Farmer",
   },
   {
     image:
       "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=880&q=80",
     text: "We purchased several farming tools from Deof Farmtech, and the delivery was fast and reliable. Their support team ensures we get the best use out of each product.",
-    name: "Fatuma Hassan",
-    role: "Smallholder Farmer, Mombasa",
+    name: "Grace Lyyn",
+    role: "Smallholder Farmer",
   },
 ];
 
