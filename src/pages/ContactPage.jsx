@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "Where is Deof Farmtech Systems located?",
     answer:
-      "We are based in Mombasa, Kenya, and serve farmers across the region.",
+      "We are based in Nairobi, Kenya, and serve farmers across the region.",
   },
   {
     question: "Do you sell equipment to both small and commercial farmers?",
