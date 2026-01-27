@@ -58,7 +58,7 @@ const products = [
   },
   {
     name: "Feed Pelleting Machine (100kg)",
-    price: "KES 95,000",
+    price: "KES 80,000",
     image: "/pellet1.jpeg",
     category: "Feed Processing Equipment",
     capacity: "100 kg/hour",
@@ -140,7 +140,7 @@ const products = [
 
   {
     name: "Electric High-Speed Silage Chopper (2 Ton/Hour)",
-    price: "Contact for Price",
+    price: "95,000",
     image: "/chopper4.jpeg",
     category: "Fodder & Silage Equipment",
     capacity: "Up to 2 Tons per Hour",
@@ -507,7 +507,7 @@ const products = [
 ,
 {
   name: "Industrial Automatic Egg Incubator (1056-Egg)",
-  price: "KES 98,000",
+  price: "KES 74,256",
   image: "/bator6.jpeg",
   category: "Poultry Equipment",
   capacity: "Up to 1,056 Eggs",
