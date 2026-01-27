@@ -28,7 +28,7 @@ const products = [
     notes:
       "Price subject to change based on market conditions and availability.",
     contactInfo:
-      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
   {
     name: "Feed Pelleting Machine (600kg/hour)",
@@ -54,7 +54,7 @@ const products = [
     notes:
       "Price subject to change based on market conditions and availability.",
     contactInfo:
-      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
   {
     name: "Feed Pelleting Machine (100kg)",
@@ -79,7 +79,7 @@ const products = [
     notes:
       "Price subject to change based on market conditions and availability.",
     contactInfo:
-      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
   {
     name: "Feed Pelleting Machine (200kg/hour)",
@@ -104,7 +104,7 @@ const products = [
     notes:
       "Price subject to change based on market conditions and availability.",
     contactInfo:
-      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
 
   {
