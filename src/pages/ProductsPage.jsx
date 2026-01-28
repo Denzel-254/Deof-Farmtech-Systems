@@ -378,7 +378,7 @@ const products = [
 
 {
   name: "Automatic Egg Incubator (56-Egg, Dual Power)",
-  price: "KES 11,500",
+  price: "KES 10,800",
   image: "/bator1.jpeg",
   category: "Poultry Equipment",
   capacity: "Up to 56 Eggs",
@@ -455,7 +455,7 @@ const products = [
 
 {
   name: "Automatic Egg Incubator (136-Egg, AC/DC)",
-  price: "KES 19,580",
+  price: "KES 19,320",
   image: "/bator4.jpeg",
   category: "Poultry Equipment",
   capacity: "Up to 136 Eggs",
@@ -638,6 +638,24 @@ const ProductsPage = () => {
             </motion.div>
           ))}
         </div>
+
+        <div className="mt-20 bg-white rounded-lg shadow-md p-8 text-center max-w-3xl mx-auto">
+          <h3 className="text-2xl font-bold text-green-900 mb-4">
+            Dispatch & Location Information
+          </h3>
+          <div className="w-20 h-1 bg-yellow-400 rounded-full mx-auto mb-6"></div>
+
+          <p className="text-green-700 mb-2">
+            <strong>Location:</strong> Nairobi, Kenya
+          </p>
+          <p className="text-green-700 mb-2">
+            <strong>Dispatch Point:</strong> Embakasi Area
+          </p>
+          <p className="text-green-700">
+            <strong>Phone / WhatsApp:</strong> 0790 407 682
+          </p>
+        </div>
+
 
         {/* CTA */}
         <div className="mt-20 text-center">

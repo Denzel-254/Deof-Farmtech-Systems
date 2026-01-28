@@ -13,7 +13,7 @@ const AboutPage = () => {
             className="w-full lg:w-1/2"
           >
             <img
-              src="/cube1.jpeg" // Replace with an actual farm or equipment image
+              src="/cube1.jpeg"
               alt="Deof Farmtech Systems"
               className="rounded-lg shadow-lg w-full h-80 lg:h-96 object-cover"
             />
@@ -26,20 +26,19 @@ const AboutPage = () => {
             className="w-full lg:w-1/2"
           >
             <h2 className="text-4xl font-bold text-green-900 mb-4">
-              About Deof Farmtech Systems
+              About Deof FarmTech Systems
             </h2>
             <div className="w-20 h-1 bg-yellow-400 rounded-full mb-6"></div>
             <p className="text-green-700 leading-relaxed mb-4">
-              Deof Farmtech Systems is a trusted agricultural equipment supplier
-              based in Nairobi, Kenya. Our mission is to empower farmers with
-              modern, reliable, and easy-to-use technologies that boost
-              productivity and profitability.
+              Deof FarmTech Systems is a trusted agricultural equipment supplier
+              based in Nairobi, Kenya, committed to helping farmers increase
+              productivity through modern, reliable, and easy-to-use farming
+              technologies.
             </p>
             <p className="text-green-700 leading-relaxed">
-              From poultry incubators to mechanized farm tools, we provide
-              solutions for both small-scale and commercial farmers. We believe
-              that technology should simplify farming, making it more productive
-              and sustainable for everyone.
+              We specialize in high-quality poultry and farm equipment designed
+              to support both small-scale farmers and large commercial
+              operations.
             </p>
           </motion.div>
         </div>
@@ -56,16 +55,14 @@ const AboutPage = () => {
               Our Journey
             </h3>
             <p className="text-green-700 leading-relaxed mb-4">
-              Founded in Nairobi, Deof Farmtech Systems started with a vision to
-              bridge the gap between farmers and modern farming technology. Over
-              the years, we’ve grown into a leading supplier of quality
-              agricultural equipment, helping hundreds of farmers increase
-              yields and efficiency.
+              At Deof FarmTech Systems, we do more than just supply machines — we
+              guide our customers to ensure they get the best performance and
+              value from their investment.
             </p>
             <p className="text-green-700 leading-relaxed">
-              Our approach combines high-quality products with personalized
-              guidance, ensuring farmers know exactly how to use our equipment
-              for the best results.
+              Whether you are starting your farming journey or expanding your
+              operation, we provide dependable equipment and practical support
+              every step of the way.
             </p>
           </motion.div>
 
@@ -76,7 +73,7 @@ const AboutPage = () => {
             className="w-full lg:w-1/2"
           >
             <img
-              src="/pellet1.jpeg" // Replace with an image showing farmers or fieldwork
+              src="/pellet1.jpeg"
               alt="Our Journey"
               className="rounded-lg shadow-lg w-full h-80 lg:h-96 object-cover"
             />
@@ -90,6 +87,7 @@ const AboutPage = () => {
           </h3>
           <div className="w-20 h-1 bg-yellow-400 rounded-full mx-auto mb-8"></div>
         </div>
+
         <div className="grid gap-10 md:grid-cols-3 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -98,16 +96,16 @@ const AboutPage = () => {
             className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition"
           >
             <img
-              src="/bator2.jpeg" // Replace with actual product image
-              alt="Poultry Incubators"
+              src="/bator2.jpeg"
+              alt="Egg Incubators"
               className="mx-auto mb-4 h-32 object-contain"
             />
             <h4 className="text-xl font-semibold text-green-900 mb-2">
-              Poultry Equipments
+              Poultry Equipment
             </h4>
             <p className="text-green-700 leading-relaxed">
-              High-quality incubators designed for efficient egg hatching,
-              perfect for both small and commercial poultry farmers.
+              Egg incubators, battery cages (A-Type and H-Type), drinkers, and
+              feeders carefully selected to support efficient poultry farming.
             </p>
           </motion.div>
 
@@ -118,16 +116,16 @@ const AboutPage = () => {
             className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition"
           >
             <img
-              src="/chopper3.jpeg" // Replace with actual product image
-              alt="Chopper"
+              src="/chopper3.jpeg"
+              alt="Feed Processing"
               className="mx-auto mb-4 h-32 object-contain"
             />
             <h4 className="text-xl font-semibold text-green-900 mb-2">
-              Feed Processing Equipments
+              Feed Processing Equipment
             </h4>
             <p className="text-green-700 leading-relaxed">
-              Efficient seed planting machines that save time and improve crop
-              yields on every farm.
+              Feed pellet machines, mixers, and crushers built to improve feed
+              quality and maximize livestock productivity.
             </p>
           </motion.div>
 
@@ -138,16 +136,16 @@ const AboutPage = () => {
             className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition"
           >
             <img
-              src="/dryer.jpeg" // Replace with customer support or field guidance image
-              alt="Farmer Support"
+              src="/dryer.jpeg"
+              alt="Customer Support"
               className="mx-auto mb-4 h-32 object-contain"
             />
             <h4 className="text-xl font-semibold text-green-900 mb-2">
-              Farm Waste & management Equipments
+              Farmer Support & Guidance
             </h4>
             <p className="text-green-700 leading-relaxed">
-              Personalized guidance to help farmers make the most of our
-              equipment and improve productivity.
+              We proudly serve farmers across Kenya with quality products,
+              professional advice, and reliable customer service.
             </p>
           </motion.div>
         </div>
