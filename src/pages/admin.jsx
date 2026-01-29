@@ -121,54 +121,166 @@ export default function Admin() {
   };
 
   return (
-    <div style={{ padding: 80, maxWidth: 900, margin: "auto" }}>
-      <h2> Admin Product Manager</h2>
+    <div className="pt-32 max-w-4xl mx-auto px-4">
+      <h2 className="text-2xl font-bold mb-6 text-gray-800">
+        Admin Product Manager
+      </h2>
 
-      <div style={{ display: "grid", gap: 10 }}>
-        <input name="name" placeholder="Name" value={form.name} onChange={handleChange} />
-        <input name="price" placeholder="Price" value={form.price} onChange={handleChange} />
+      <div className="grid gap-4 mb-6">
+        <input
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          name="name"
+          placeholder="Name"
+          value={form.name}
+          onChange={handleChange}
+        />
+        <input
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          name="price"
+          placeholder="Price"
+          value={form.price}
+          onChange={handleChange}
+        />
 
-        <select name="category" value={form.category} onChange={handleChange}>
+        <select
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          name="category"
+          value={form.category}
+          onChange={handleChange}
+        >
           <option value="">Select Category</option>
           {categories.map((cat) => (
-            <option key={cat} value={cat}>{cat}</option>
+            <option key={cat} value={cat}>
+              {cat}
+            </option>
           ))}
         </select>
 
-        <input name="capacity" placeholder="Capacity" value={form.capacity} onChange={handleChange} />
-        <input name="motorPower" placeholder="Motor Power" value={form.motorPower} onChange={handleChange} />
-        <input name="pelletSize" placeholder="Pellet Size" value={form.pelletSize} onChange={handleChange} />
-        <input name="dimensions" placeholder="Dimensions" value={form.dimensions} onChange={handleChange} />
-        <input name="weight" placeholder="Weight" value={form.weight} onChange={handleChange} />
+        <input
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          name="capacity"
+          placeholder="Capacity"
+          value={form.capacity}
+          onChange={handleChange}
+        />
+        <input
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          name="motorPower"
+          placeholder="Motor Power"
+          value={form.motorPower}
+          onChange={handleChange}
+        />
+        <input
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          name="pelletSize"
+          placeholder="Pellet Size"
+          value={form.pelletSize}
+          onChange={handleChange}
+        />
+        <input
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          name="dimensions"
+          placeholder="Dimensions"
+          value={form.dimensions}
+          onChange={handleChange}
+        />
+        <input
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          name="weight"
+          placeholder="Weight"
+          value={form.weight}
+          onChange={handleChange}
+        />
 
-        <textarea name="usage" placeholder="Usage (comma separated)" value={form.usage} onChange={handleChange} />
-        <textarea name="description" placeholder="Description" value={form.description} onChange={handleChange} />
-        <textarea name="benefits" placeholder="Benefits (comma separated)" value={form.benefits} onChange={handleChange} />
-        <textarea name="notes" placeholder="Notes" value={form.notes} onChange={handleChange} />
-        <textarea name="contactInfo" placeholder="Contact Info" value={form.contactInfo} onChange={handleChange} />
+        <textarea
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+          name="usage"
+          placeholder="Usage (comma separated)"
+          value={form.usage}
+          onChange={handleChange}
+        />
+        <textarea
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+          name="description"
+          placeholder="Description"
+          value={form.description}
+          onChange={handleChange}
+        />
+        <textarea
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+          name="benefits"
+          placeholder="Benefits (comma separated)"
+          value={form.benefits}
+          onChange={handleChange}
+        />
+        <textarea
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+          name="notes"
+          placeholder="Notes"
+          value={form.notes}
+          onChange={handleChange}
+        />
+        <textarea
+          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+          name="contactInfo"
+          placeholder="Contact Info"
+          value={form.contactInfo}
+          onChange={handleChange}
+        />
 
-        <input type="file" onChange={(e) => setImage(e.target.files[0])} />
+        <input
+          type="file"
+          onChange={(e) => setImage(e.target.files[0])}
+          className="py-2"
+        />
 
-        <button onClick={handleSubmit}>
-          {editingId ? "Update Product" : "Add Product"}
-        </button>
+        <div className="flex gap-2">
+          <button
+            onClick={handleSubmit}
+            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+          >
+            {editingId ? "Update Product" : "Add Product"}
+          </button>
 
-        {editingId && <button onClick={resetForm}>Cancel Edit</button>}
+          {editingId && (
+            <button
+              onClick={resetForm}
+              className="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 transition"
+            >
+              Cancel Edit
+            </button>
+          )}
+        </div>
       </div>
 
-      <hr style={{ margin: "30px 0" }} />
+      <hr className="my-8 border-gray-300" />
 
-      <h3>📦 Existing Products</h3>
+      <h3 className="text-xl font-semibold mb-4">📦 Existing Products</h3>
 
-      {products.map((p) => (
-        <div key={p.id} style={{ border: "1px solid #ddd", padding: 10, marginBottom: 10 }}>
-          <strong>{p.name}</strong> — {p.price}
-          <div style={{ marginTop: 5 }}>
-            <button onClick={() => handleEdit(p)}>✏️ Edit</button>
-            <button onClick={() => handleDelete(p.id)} style={{ marginLeft: 10 }}>🗑️ Delete</button>
+      <div className="space-y-4">
+        {products.map((p) => (
+          <div
+            key={p.id}
+            className="border rounded p-4 flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-2"
+          >
+            <div>
+              <strong className="text-gray-800">{p.name}</strong> —{" "}
+              <span className="text-gray-600">{p.price}</span>
+            </div>
+            <div className="flex gap-2 mt-2 sm:mt-0">
+              <button className="text-blue-500 hover:underline" onClick={() => handleEdit(p)}>
+                ✏️ Edit
+              </button>
+              <button
+                className="text-red-500 hover:underline"
+                onClick={() => handleDelete(p.id)}
+              >
+                🗑️ Delete
+              </button>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
