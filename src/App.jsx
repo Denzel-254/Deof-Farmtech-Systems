@@ -10,6 +10,7 @@ import AboutPage from "./pages/AboutPage";
 import ProductsPage from "./pages/ProductsPage";
 import LearnPage from "./pages/LearnPage";
 import ContactPage from "./pages/ContactPage";
+import UploadPage from "./pages/upload";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -33,7 +34,12 @@ function App() {
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/learn" element={<LearnPage />} />
         <Route path="/contact" element={<ContactPage />} />
+ 
          
+
+        <Route path="/upload" element={<UploadPage />} />
+
+
       </Routes>
       <Footer />
     </>
