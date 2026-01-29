@@ -10,7 +10,7 @@ import AboutPage from "./pages/AboutPage";
 import ProductsPage from "./pages/ProductsPage";
 import LearnPage from "./pages/LearnPage";
 import ContactPage from "./pages/ContactPage";
-import UploadPage from "./pages/upload";
+import UploadPage from "./pages/UploadPage";
 import Admin from "./pages/admin";
 import { Routes, Route } from "react-router-dom";
 
