@@ -2,9 +2,7 @@ import { useEffect } from "react";
 import bulkUploadProducts from "../bulkUploadProducts";
 
 export default function UploadPage() {
-  useEffect(() => {
-    bulkUploadProducts();
-  }, []);
+  
 
   return (
     <div style={{ padding: 40 }}>

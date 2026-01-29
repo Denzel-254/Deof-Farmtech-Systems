@@ -121,8 +121,8 @@ export default function Admin() {
   };
 
   return (
-    <div style={{ padding: 30, maxWidth: 900, margin: "auto" }}>
-      <h2>🔥 Admin Product Manager</h2>
+    <div style={{ padding: 80, maxWidth: 900, margin: "auto" }}>
+      <h2> Admin Product Manager</h2>
 
       <div style={{ display: "grid", gap: 10 }}>
         <input name="name" placeholder="Name" value={form.name} onChange={handleChange} />
