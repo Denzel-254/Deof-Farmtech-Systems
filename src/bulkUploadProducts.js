@@ -28,7 +28,7 @@ const products = [
     notes:
       "Price subject to change based on market conditions and availability.",
     contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
   {
     name: "Feed Pelleting Machine (600kg/hour)",
@@ -54,7 +54,7 @@ const products = [
     notes:
       "Price subject to change based on market conditions and availability.",
     contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
   {
     name: "Feed Pelleting Machine (100kg)",
@@ -79,7 +79,7 @@ const products = [
     notes:
       "Price subject to change based on market conditions and availability.",
     contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
   {
     name: "Feed Pelleting Machine (200kg/hour)",
@@ -104,39 +104,38 @@ const products = [
     notes:
       "Price subject to change based on market conditions and availability.",
     contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
 
   {
-  name: "Diesel Engine Silage Chopper (2.5 Ton/Hour)",
-  price: "KES 130,000",
-  image: "/chopper3.jpeg",
-  category: "Fodder & Silage Equipment",
-  capacity: "2.5 Tons per Hour",
-  motorPower: "4.85 kW (6.5 HP) Diesel Engine — Air Cooled",
-  pelletSize: "N/A",
-  dimensions: "Compact Farm-Scale Design",
-  weight: "60 kg",
-  usage: [
-    "Silage Preparation",
-    "Forage Processing",
-    "Small & Medium-Scale Livestock Farms",
-  ],
-  description:
-    "The 2.5 Ton/Hour Diesel Engine Silage Chopper is designed for efficient silage and forage preparation on small to medium-scale farms. Powered by a fuel-efficient, air-cooled diesel engine, it delivers reliable chopping performance without the need for electricity. Its durable build and easy maintenance make it suitable for continuous farm operations.",
-  benefits: [
-    "Efficient chopping for silage and forage preparation",
-    "Diesel-powered operation for off-grid use",
-    "Low fuel consumption for economical operation",
-    "Durable and easy to maintain",
-    "Ideal for small to medium-scale livestock farms",
-  ],
-  notes:
-    "Specifications and pricing are subject to change based on market conditions and availability.",
-  contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
-}
-,
+    name: "Diesel Engine Silage Chopper (2.5 Ton/Hour)",
+    price: "KES 130,000",
+    image: "/chopper3.jpeg",
+    category: "Fodder & Silage Equipment",
+    capacity: "2.5 Tons per Hour",
+    motorPower: "4.85 kW (6.5 HP) Diesel Engine — Air Cooled",
+    pelletSize: "N/A",
+    dimensions: "Compact Farm-Scale Design",
+    weight: "60 kg",
+    usage: [
+      "Silage Preparation",
+      "Forage Processing",
+      "Small & Medium-Scale Livestock Farms",
+    ],
+    description:
+      "The 2.5 Ton/Hour Diesel Engine Silage Chopper is designed for efficient silage and forage preparation on small to medium-scale farms. Powered by a fuel-efficient, air-cooled diesel engine, it delivers reliable chopping performance without the need for electricity. Its durable build and easy maintenance make it suitable for continuous farm operations.",
+    benefits: [
+      "Efficient chopping for silage and forage preparation",
+      "Diesel-powered operation for off-grid use",
+      "Low fuel consumption for economical operation",
+      "Durable and easy to maintain",
+      "Ideal for small to medium-scale livestock farms",
+    ],
+    notes:
+      "Specifications and pricing are subject to change based on market conditions and availability.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+  },
 
   {
     name: "Electric High-Speed Silage Chopper (2 Ton/Hour)",
@@ -296,242 +295,240 @@ const products = [
       "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
   },
   {
-  name: "Automatic Manure Dryer (3-Phase Electric)",
-  price: "KES 240,128",
-  image: "/dryer.jpeg",
-  category: "Waste Management & Recycling Equipment",
-  capacity: "300–500 kg/hour (Wet Manure)",
-  motorPower: "11 kW Total (5.5 kW Drying Motor + 5.5 kW Pumping Motor)",
-  pelletSize: "N/A",
-  dimensions: "Compact Industrial Design",
-  weight: "Heavy-Duty Build",
-  usage: [
-    "Poultry Manure",
-    "Pig Manure",
-    "Livestock Waste",
-    "Organic Fertilizer Preparation",
-  ],
-  description:
-    "The 3-Phase Electric Automatic Manure Dryer is a fully automatic, continuous drying system designed to efficiently process poultry, pig, and livestock manure. It reduces moisture content by up to 60–70%, producing dry, manageable output suitable for fertilizer use. With stable performance, low energy consumption, and compact design, it is ideal for small to medium-scale farms seeking efficient waste management solutions.",
-  benefits: [
-    "Fully automatic operation reduces labor costs",
-    "Continuous drying system ensures consistent output",
-    "Reduces moisture content by up to 60–70%",
-    "Low energy consumption with stable performance",
-    "Compact design suitable for small to medium farms",
-  ],
-  notes:
-    "Specifications and pricing are subject to change based on market conditions and availability.",
-  contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
-},
+    name: "Automatic Manure Dryer (3-Phase Electric)",
+    price: "KES 240,128",
+    image: "/dryer.jpeg",
+    category: "Waste Management & Recycling Equipment",
+    capacity: "300–500 kg/hour (Wet Manure)",
+    motorPower: "11 kW Total (5.5 kW Drying Motor + 5.5 kW Pumping Motor)",
+    pelletSize: "N/A",
+    dimensions: "Compact Industrial Design",
+    weight: "Heavy-Duty Build",
+    usage: [
+      "Poultry Manure",
+      "Pig Manure",
+      "Livestock Waste",
+      "Organic Fertilizer Preparation",
+    ],
+    description:
+      "The 3-Phase Electric Automatic Manure Dryer is a fully automatic, continuous drying system designed to efficiently process poultry, pig, and livestock manure. It reduces moisture content by up to 60–70%, producing dry, manageable output suitable for fertilizer use. With stable performance, low energy consumption, and compact design, it is ideal for small to medium-scale farms seeking efficient waste management solutions.",
+    benefits: [
+      "Fully automatic operation reduces labor costs",
+      "Continuous drying system ensures consistent output",
+      "Reduces moisture content by up to 60–70%",
+      "Low energy consumption with stable performance",
+      "Compact design suitable for small to medium farms",
+    ],
+    notes:
+      "Specifications and pricing are subject to change based on market conditions and availability.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+  },
 
-{
-  name: "A-Type Galvanized Battery Cage",
-  price: "KES 36,500",
-  image: "/cage.jpeg",
-  category: "Poultry Housing Equipment",
-  capacity: "128 Birds",
-  motorPower: "N/A",
-  pelletSize: "N/A",
-  dimensions: "7 × 8 × 8 ft",
-  weight: "Heavy-Duty Galvanized Steel",
-  usage: ["Layer Chickens", "Egg Production"],
-  description:
-    "The A-Type Galvanized Battery Cage is designed for efficient and organized layer farming. Built with durable galvanized steel, it supports four tiers and houses up to 128 birds, ensuring easy egg collection, hygiene, and long-term use.",
-  benefits: [
-    "Durable galvanized steel construction",
-    "Efficient egg collection design",
-    "Easy to clean and maintain",
-    "Free installation included",
-    "Optimized space utilization with 4-tier structure",
-  ],
-  notes:
-    "Free installation included. Specifications may vary depending on farm setup.",
-  contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
-},
+  {
+    name: "A-Type Galvanized Battery Cage",
+    price: "KES 36,500",
+    image: "/cage.jpeg",
+    category: "Poultry Housing Equipment",
+    capacity: "128 Birds",
+    motorPower: "N/A",
+    pelletSize: "N/A",
+    dimensions: "7 × 8 × 8 ft",
+    weight: "Heavy-Duty Galvanized Steel",
+    usage: ["Layer Chickens", "Egg Production"],
+    description:
+      "The A-Type Galvanized Battery Cage is designed for efficient and organized layer farming. Built with durable galvanized steel, it supports four tiers and houses up to 128 birds, ensuring easy egg collection, hygiene, and long-term use.",
+    benefits: [
+      "Durable galvanized steel construction",
+      "Efficient egg collection design",
+      "Easy to clean and maintain",
+      "Free installation included",
+      "Optimized space utilization with 4-tier structure",
+    ],
+    notes:
+      "Free installation included. Specifications may vary depending on farm setup.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+  },
 
-{
-  name: "Chicken Transporting Crate (Compact)",
-  price: "KES 3,900",
-  image: "/crate.jpeg",
-  category: "Poultry Transport Equipment",
-  capacity: "10–12 Birds",
-  motorPower: "N/A",
-  pelletSize: "N/A",
-  dimensions: "66 × 45 × 27 cm",
-  weight: "Lightweight Durable Plastic",
-  usage: ["Small Batch Transport", "Chicks & Layer Birds"],
-  description:
-    "The Compact Chicken Transporting Crate is designed for safe, efficient transport of smaller batches of birds. Its lightweight, durable construction makes it easy to handle, clean, and load, while ensuring the safety and comfort of your poultry.",
-  benefits: [
-    "Lightweight and durable for safe transport",
-    "Compact design ideal for smaller batches",
-    "Easy to clean and handle",
-    "Safe for chicks and adult birds",
-  ],
-  notes: "Specifications may vary slightly depending on batch.",
-  contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
-},
+  {
+    name: "Chicken Transporting Crate (Compact)",
+    price: "KES 3,900",
+    image: "/crate.jpeg",
+    category: "Poultry Transport Equipment",
+    capacity: "10–12 Birds",
+    motorPower: "N/A",
+    pelletSize: "N/A",
+    dimensions: "66 × 45 × 27 cm",
+    weight: "Lightweight Durable Plastic",
+    usage: ["Small Batch Transport", "Chicks & Layer Birds"],
+    description:
+      "The Compact Chicken Transporting Crate is designed for safe, efficient transport of smaller batches of birds. Its lightweight, durable construction makes it easy to handle, clean, and load, while ensuring the safety and comfort of your poultry.",
+    benefits: [
+      "Lightweight and durable for safe transport",
+      "Compact design ideal for smaller batches",
+      "Easy to clean and handle",
+      "Safe for chicks and adult birds",
+    ],
+    notes: "Specifications may vary slightly depending on batch.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+  },
 
-{
-  name: "Automatic Egg Incubator (56-Egg, Dual Power)",
-  price: "KES 10,800",
-  image: "/bator1.jpeg",
-  category: "Poultry Equipment",
-  capacity: "Up to 56 Eggs",
-  motorPower: "80 W (AC/DC Dual Power)",
-  pelletSize: "N/A",
-  dimensions: "50 × 43 × 17 cm",
-  weight: "6 kg",
-  usage: ["Chicken", "Goose", "Duck", "Pheasant", "Quails"],
-  description:
-    "The 56-Egg Automatic Incubator with Dual Power is perfect for small to medium-scale farms and hobbyists. It features automatic temperature and humidity control for reliable hatching, and dual power AC/DC operation ensures uninterrupted performance even with unstable electricity. Compact and lightweight, it’s easy to handle and store.",
-  benefits: [
-    "Automatic temperature and humidity control for reliable hatching",
-    "Dual AC/DC power supply for stable operation",
-    "Compact and lightweight design for easy handling",
-    "Ideal for small to medium-scale farms and hobbyists",
-    "Supports multiple poultry types (Chicken, Goose, Duck, Pheasant, Quails)",
-  ],
-  notes: "Specifications may vary slightly depending on batch and availability.",
-  contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
-}
-,
+  {
+    name: "Automatic Egg Incubator (56-Egg, Dual Power)",
+    price: "KES 10,800",
+    image: "/bator1.jpeg",
+    category: "Poultry Equipment",
+    capacity: "Up to 56 Eggs",
+    motorPower: "80 W (AC/DC Dual Power)",
+    pelletSize: "N/A",
+    dimensions: "50 × 43 × 17 cm",
+    weight: "6 kg",
+    usage: ["Chicken", "Goose", "Duck", "Pheasant", "Quails"],
+    description:
+      "The 56-Egg Automatic Incubator with Dual Power is perfect for small to medium-scale farms and hobbyists. It features automatic temperature and humidity control for reliable hatching, and dual power AC/DC operation ensures uninterrupted performance even with unstable electricity. Compact and lightweight, it’s easy to handle and store.",
+    benefits: [
+      "Automatic temperature and humidity control for reliable hatching",
+      "Dual AC/DC power supply for stable operation",
+      "Compact and lightweight design for easy handling",
+      "Ideal for small to medium-scale farms and hobbyists",
+      "Supports multiple poultry types (Chicken, Goose, Duck, Pheasant, Quails)",
+    ],
+    notes:
+      "Specifications may vary slightly depending on batch and availability.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+  },
 
-{
-  name: "Automatic Egg Incubator (68-Egg, Dual Power AC/DC)",
-  price: "KES 14,500",
-  image: "/bator2.jpeg",
-  category: "Poultry Equipment",
-  capacity: "Up to 68 Eggs",
-  motorPower: "Dual Power AC/DC",
-  pelletSize: "N/A",
-  dimensions: "53 × 53 × 25 cm",
-  weight: "8 kg",
-  usage: ["Chicken", "Duck", "Goose", "Pheasant", "Quail"],
-  description:
-    "The 68-Egg Automatic Incubator with Dual Power AC/DC is perfect for small to medium-scale farms and hobbyists. It features automatic temperature and humidity control for reliable hatching, and dual power operation ensures uninterrupted performance even with unstable electricity. Compact and lightweight, it is easy to handle and store.",
-  benefits: [
-    "Automatic temperature and humidity control for reliable hatching",
-    "Dual AC/DC power supply for stable operation",
-    "Compact and lightweight design for easy handling",
-    "Ideal for small to medium-scale farms and hobbyists",
-    "Supports multiple poultry types (Chicken, Duck, Goose, Pheasant, Quail)",
-  ],
-  notes: "Specifications may vary slightly depending on batch and availability.",
-  contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
-}
-,
-{
-  name: "Automatic Egg Incubator (204-Egg, AC/DC)",
-  price: "KES 24,000",
-  image: "/bator3.jpeg",
-  category: "Poultry Equipment",
-  capacity: "Up to 204 Eggs",
-  motorPower: "200 W (Dual Power AC/DC)",
-  pelletSize: "N/A",
-  dimensions: "Compact Farm-Scale Design",
-  weight: "19 kg",
-  usage: ["Chicken", "Duck", "Goose", "Pheasant", "Quail"],
-  description:
-    "The 204-Egg Automatic Incubator with AC/DC dual power is designed for small to medium-scale farms requiring higher capacity hatching. It provides reliable temperature and humidity control and dual power operation ensures uninterrupted performance. Its durable build supports consistent hatching results.",
-  benefits: [
-    "High-capacity incubator for up to 204 eggs",
-    "Dual AC/DC power supply ensures stable operation",
-    "Durable and reliable temperature and humidity control",
-    "Ideal for small to medium-scale farms",
-    "Supports multiple poultry types (Chicken, Duck, Goose, Pheasant, Quail)",
-  ],
-  notes: "Specifications may vary slightly depending on batch and availability.",
-  contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
-}
-,
+  {
+    name: "Automatic Egg Incubator (68-Egg, Dual Power AC/DC)",
+    price: "KES 14,500",
+    image: "/bator2.jpeg",
+    category: "Poultry Equipment",
+    capacity: "Up to 68 Eggs",
+    motorPower: "Dual Power AC/DC",
+    pelletSize: "N/A",
+    dimensions: "53 × 53 × 25 cm",
+    weight: "8 kg",
+    usage: ["Chicken", "Duck", "Goose", "Pheasant", "Quail"],
+    description:
+      "The 68-Egg Automatic Incubator with Dual Power AC/DC is perfect for small to medium-scale farms and hobbyists. It features automatic temperature and humidity control for reliable hatching, and dual power operation ensures uninterrupted performance even with unstable electricity. Compact and lightweight, it is easy to handle and store.",
+    benefits: [
+      "Automatic temperature and humidity control for reliable hatching",
+      "Dual AC/DC power supply for stable operation",
+      "Compact and lightweight design for easy handling",
+      "Ideal for small to medium-scale farms and hobbyists",
+      "Supports multiple poultry types (Chicken, Duck, Goose, Pheasant, Quail)",
+    ],
+    notes:
+      "Specifications may vary slightly depending on batch and availability.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+  },
+  {
+    name: "Automatic Egg Incubator (204-Egg, AC/DC)",
+    price: "KES 24,000",
+    image: "/bator3.jpeg",
+    category: "Poultry Equipment",
+    capacity: "Up to 204 Eggs",
+    motorPower: "200 W (Dual Power AC/DC)",
+    pelletSize: "N/A",
+    dimensions: "Compact Farm-Scale Design",
+    weight: "19 kg",
+    usage: ["Chicken", "Duck", "Goose", "Pheasant", "Quail"],
+    description:
+      "The 204-Egg Automatic Incubator with AC/DC dual power is designed for small to medium-scale farms requiring higher capacity hatching. It provides reliable temperature and humidity control and dual power operation ensures uninterrupted performance. Its durable build supports consistent hatching results.",
+    benefits: [
+      "High-capacity incubator for up to 204 eggs",
+      "Dual AC/DC power supply ensures stable operation",
+      "Durable and reliable temperature and humidity control",
+      "Ideal for small to medium-scale farms",
+      "Supports multiple poultry types (Chicken, Duck, Goose, Pheasant, Quail)",
+    ],
+    notes:
+      "Specifications may vary slightly depending on batch and availability.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+  },
 
-{
-  name: "Automatic Egg Incubator (136-Egg, AC/DC)",
-  price: "KES 19,320",
-  image: "/bator4.jpeg",
-  category: "Poultry Equipment",
-  capacity: "Up to 136 Eggs",
-  motorPower: "120 W (Dual Power AC/DC)",
-  pelletSize: "N/A",
-  dimensions: "53 × 54 × 40 cm",
-  weight: "12 kg",
-  usage: ["Chicken", "Duck", "Goose", "Pheasant", "Quail"],
-  description:
-    "The 136-Egg Automatic Incubator with AC/DC dual power is designed for small to medium-scale farms and hobbyists. Its drawer-type layout allows easy access to eggs, while automatic temperature and humidity control ensures reliable hatching. Dual power operation guarantees uninterrupted performance even with unstable electricity.",
-  benefits: [
-    "Drawer-type design for easy egg access",
-    "Automatic temperature and humidity control for reliable hatching",
-    "Dual AC/DC power supply ensures stable operation",
-    "Compact and lightweight for easy handling",
-    "Ideal for small to medium-scale farms",
-    "Supports multiple poultry types (Chicken, Duck, Goose, Pheasant, Quail)",
-  ],
-  notes: "Specifications may vary slightly depending on batch and availability.",
-  contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
-}
-,
+  {
+    name: "Automatic Egg Incubator (136-Egg, AC/DC)",
+    price: "KES 19,320",
+    image: "/bator4.jpeg",
+    category: "Poultry Equipment",
+    capacity: "Up to 136 Eggs",
+    motorPower: "120 W (Dual Power AC/DC)",
+    pelletSize: "N/A",
+    dimensions: "53 × 54 × 40 cm",
+    weight: "12 kg",
+    usage: ["Chicken", "Duck", "Goose", "Pheasant", "Quail"],
+    description:
+      "The 136-Egg Automatic Incubator with AC/DC dual power is designed for small to medium-scale farms and hobbyists. Its drawer-type layout allows easy access to eggs, while automatic temperature and humidity control ensures reliable hatching. Dual power operation guarantees uninterrupted performance even with unstable electricity.",
+    benefits: [
+      "Drawer-type design for easy egg access",
+      "Automatic temperature and humidity control for reliable hatching",
+      "Dual AC/DC power supply ensures stable operation",
+      "Compact and lightweight for easy handling",
+      "Ideal for small to medium-scale farms",
+      "Supports multiple poultry types (Chicken, Duck, Goose, Pheasant, Quail)",
+    ],
+    notes:
+      "Specifications may vary slightly depending on batch and availability.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+  },
 
-{
-  name: "Industrial Automatic Egg Incubator (528-Egg)",
-  price: "KES 53,500",
-  image: "/bator5.jpeg",
-  category: "Poultry Equipment",
-  capacity: "Up to 528 Eggs",
-  motorPower: "250 W (AC Power)",
-  dimensions: "98 × 71 × 106 cm",
-  weight: "45 kg",
-  usage: ["Chicken", "Duck", "Goose", "Pheasant", "Quail"],
-  description:
-    "The Industrial 528-Egg Automatic Incubator is built for commercial poultry farmers and hatcheries that require high capacity and consistent hatch results. With efficient AC power operation and a robust industrial design, it delivers stable temperature control for reliable large-scale hatching.",
-  benefits: [
-    "Large capacity ideal for commercial hatcheries",
-    "Automatic temperature control for consistent hatch rates",
-    "Industrial-grade build for long-term use",
-    "Efficient 250W AC power consumption",
-    "Suitable for multiple poultry egg types",
-    "Stable and reliable operation for continuous hatching cycles",
-  ],
-  notes: "Specifications and pricing may vary slightly depending on market availability.",
-  contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
-}
-,
-{
-  name: "Industrial Automatic Egg Incubator (1056-Egg)",
-  price: "KES 74,256",
-  image: "/bator6.jpeg",
-  category: "Poultry Equipment",
-  capacity: "Up to 1,056 Eggs",
-  motorPower: "500 W (AC Power)",
-  dimensions: "150 × 85 × 120 cm",
-  weight: "85 kg",
-  usage: ["Chicken", "Duck", "Goose", "Pheasant", "Quail"],
-  description:
-    "The Industrial 1056-Egg Automatic Incubator is designed for large-scale poultry farms and commercial hatcheries that require very high capacity and dependable performance. Its powerful AC system and industrial-grade construction ensure stable temperature control and consistent hatching results across large batches.",
-  benefits: [
-    "Very high capacity suitable for commercial hatcheries",
-    "Automatic temperature control for reliable hatch rates",
-    "Heavy-duty industrial construction for long-term use",
-    "Efficient 500W AC power operation",
-    "Supports multiple poultry egg types",
-    "Stable performance for continuous large-scale hatching",
-  ],
-  notes: "Specifications and pricing may vary depending on market availability.",
-  contactInfo:
-    "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
-}
-
-
-
+  {
+    name: "Industrial Automatic Egg Incubator (528-Egg)",
+    price: "KES 53,500",
+    image: "/bator5.jpeg",
+    category: "Poultry Equipment",
+    capacity: "Up to 528 Eggs",
+    motorPower: "250 W (AC Power)",
+    dimensions: "98 × 71 × 106 cm",
+    weight: "45 kg",
+    usage: ["Chicken", "Duck", "Goose", "Pheasant", "Quail"],
+    description:
+      "The Industrial 528-Egg Automatic Incubator is built for commercial poultry farmers and hatcheries that require high capacity and consistent hatch results. With efficient AC power operation and a robust industrial design, it delivers stable temperature control for reliable large-scale hatching.",
+    benefits: [
+      "Large capacity ideal for commercial hatcheries",
+      "Automatic temperature control for consistent hatch rates",
+      "Industrial-grade build for long-term use",
+      "Efficient 250W AC power consumption",
+      "Suitable for multiple poultry egg types",
+      "Stable and reliable operation for continuous hatching cycles",
+    ],
+    notes:
+      "Specifications and pricing may vary slightly depending on market availability.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+  },
+  {
+    name: "Industrial Automatic Egg Incubator (1056-Egg)",
+    price: "KES 74,256",
+    image: "/bator6.jpeg",
+    category: "Poultry Equipment",
+    capacity: "Up to 1,056 Eggs",
+    motorPower: "500 W (AC Power)",
+    dimensions: "150 × 85 × 120 cm",
+    weight: "85 kg",
+    usage: ["Chicken", "Duck", "Goose", "Pheasant", "Quail"],
+    description:
+      "The Industrial 1056-Egg Automatic Incubator is designed for large-scale poultry farms and commercial hatcheries that require very high capacity and dependable performance. Its powerful AC system and industrial-grade construction ensure stable temperature control and consistent hatching results across large batches.",
+    benefits: [
+      "Very high capacity suitable for commercial hatcheries",
+      "Automatic temperature control for reliable hatch rates",
+      "Heavy-duty industrial construction for long-term use",
+      "Efficient 500W AC power operation",
+      "Supports multiple poultry egg types",
+      "Stable performance for continuous large-scale hatching",
+    ],
+    notes:
+      "Specifications and pricing may vary depending on market availability.",
+    contactInfo:
+      "Contact us today for pricing, availability, and expert guidance for your farm.\n\nPhone: 0790 407 682\n\nDeof FarmTech Systems — Smart Farming, Smart Results.",
+  },
 ];
 
 const bulkUploadProducts = async () => {

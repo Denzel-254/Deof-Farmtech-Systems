@@ -37,8 +37,6 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/upload" element={<UploadPage />} />
         <Route path="/_secure/manage-products-9xK2" element={<Admin />} />
-
-
       </Routes>
       <Footer />
     </>

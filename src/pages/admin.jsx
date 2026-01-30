@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { db, storage } from "../firebase";
+import { db } from "../firebase";
 import {
   collection,
   addDoc,
@@ -8,7 +8,6 @@ import {
   doc,
   updateDoc,
 } from "firebase/firestore";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 const categories = [
   "Feed Processing Equipment",
@@ -23,6 +22,7 @@ export default function Admin() {
   const [products, setProducts] = useState([]);
   const [editingId, setEditingId] = useState(null);
   const [image, setImage] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const [form, setForm] = useState({
     name: "",
@@ -38,7 +38,36 @@ export default function Admin() {
     benefits: "",
     notes: "",
     contactInfo: "",
+    image: "",
   });
+
+  // ✅ Cloudinary upload (FIXED)
+  const uploadToCloudinary = async (file) => {
+    const formData = new FormData();
+    formData.append("file", file);
+
+    // 🔥 CHANGE THIS to your REAL upload preset (NO spaces)
+    formData.append("upload_preset", "testing");
+
+    const res = await fetch(
+      "https://api.cloudinary.com/v1_1/dyk8rpf7f/auto/upload",
+      {
+        method: "POST",
+        body: formData,
+      },
+    );
+
+    const data = await res.json();
+
+     console.log("🔥 Cloudinary response:", data); // ADD THIS
+
+    if (!data.secure_url) {
+      console.error("Cloudinary error:", data);
+      throw new Error("Cloudinary upload failed");
+    }
+
+    return data.secure_url;
+  };
 
   const fetchProducts = async () => {
     const snapshot = await getDocs(collection(db, "products"));
@@ -72,37 +101,47 @@ export default function Admin() {
       benefits: "",
       notes: "",
       contactInfo: "",
+      image: "",
     });
     setImage(null);
     setEditingId(null);
   };
 
   const handleSubmit = async () => {
-    let imageUrl = form.image;
+    try {
+      setLoading(true);
 
-    if (image) {
-      const imageRef = ref(storage, `products/${Date.now()}-${image.name}`);
-      await uploadBytes(imageRef, image);
-      imageUrl = await getDownloadURL(imageRef);
+      let imageUrl = form.image;
+
+      if (image) {
+        imageUrl = await uploadToCloudinary(image);
+      }
+
+      const productData = {
+        ...form,
+        image: imageUrl,
+        usage: form.usage ? form.usage.split(",").map((u) => u.trim()) : [],
+        benefits: form.benefits
+          ? form.benefits.split(",").map((b) => b.trim())
+          : [],
+      };
+
+      if (editingId) {
+        await updateDoc(doc(db, "products", editingId), productData);
+        alert("✅ Product updated!");
+      } else {
+        await addDoc(collection(db, "products"), productData);
+        alert("✅ Product added!");
+      }
+
+      resetForm();
+      fetchProducts();
+    } catch (error) {
+      console.error("Upload error:", error);
+      alert("❌ Upload failed. Check console.");
+    } finally {
+      setLoading(false);
     }
-
-    const productData = {
-      ...form,
-      image: imageUrl,
-      usage: form.usage.split(",").map((u) => u.trim()),
-      benefits: form.benefits.split(",").map((b) => b.trim()),
-    };
-
-    if (editingId) {
-      await updateDoc(doc(db, "products", editingId), productData);
-      alert("✅ Product updated!");
-    } else {
-      await addDoc(collection(db, "products"), productData);
-      alert("✅ Product added!");
-    }
-
-    resetForm();
-    fetchProducts();
   };
 
   const handleEdit = (product) => {
@@ -121,29 +160,31 @@ export default function Admin() {
   };
 
   return (
-    <div className="pt-32 max-w-4xl mx-auto px-4">
-      <h2 className="text-2xl font-bold mb-6 text-gray-800">
-        Admin Product Manager
+    <div className="pt-32 max-w-5xl mx-auto px-4">
+      <h2 className="text-3xl font-bold mb-6 text-gray-800">
+        🛠️ Admin Product Manager
       </h2>
 
-      <div className="grid gap-4 mb-6">
+      {/* FORM */}
+      <div className="grid gap-4 mb-8 bg-white p-6 rounded-xl shadow-lg">
         <input
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="border rounded px-3 py-2 focus:ring-2 focus:ring-green-400 outline-none"
           name="name"
-          placeholder="Name"
+          placeholder="Product Name"
           value={form.name}
           onChange={handleChange}
         />
+
         <input
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="border rounded px-3 py-2 focus:ring-2 focus:ring-green-400 outline-none"
           name="price"
-          placeholder="Price"
+          placeholder="Price (KES)"
           value={form.price}
           onChange={handleChange}
         />
 
         <select
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="border rounded px-3 py-2 focus:ring-2 focus:ring-green-400 outline-none"
           name="category"
           value={form.category}
           onChange={handleChange}
@@ -157,35 +198,35 @@ export default function Admin() {
         </select>
 
         <input
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="border rounded px-3 py-2"
           name="capacity"
           placeholder="Capacity"
           value={form.capacity}
           onChange={handleChange}
         />
         <input
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="border rounded px-3 py-2"
           name="motorPower"
           placeholder="Motor Power"
           value={form.motorPower}
           onChange={handleChange}
         />
         <input
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="border rounded px-3 py-2"
           name="pelletSize"
           placeholder="Pellet Size"
           value={form.pelletSize}
           onChange={handleChange}
         />
         <input
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="border rounded px-3 py-2"
           name="dimensions"
           placeholder="Dimensions"
           value={form.dimensions}
           onChange={handleChange}
         />
         <input
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="border rounded px-3 py-2"
           name="weight"
           placeholder="Weight"
           value={form.weight}
@@ -193,35 +234,35 @@ export default function Admin() {
         />
 
         <textarea
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
-          name="usage"
-          placeholder="Usage (comma separated)"
-          value={form.usage}
-          onChange={handleChange}
-        />
-        <textarea
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+          className="border rounded px-3 py-2"
           name="description"
           placeholder="Description"
           value={form.description}
           onChange={handleChange}
         />
         <textarea
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+          className="border rounded px-3 py-2"
+          name="usage"
+          placeholder="Usage (comma separated)"
+          value={form.usage}
+          onChange={handleChange}
+        />
+        <textarea
+          className="border rounded px-3 py-2"
           name="benefits"
           placeholder="Benefits (comma separated)"
           value={form.benefits}
           onChange={handleChange}
         />
         <textarea
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+          className="border rounded px-3 py-2"
           name="notes"
           placeholder="Notes"
           value={form.notes}
           onChange={handleChange}
         />
         <textarea
-          className="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none"
+          className="border rounded px-3 py-2"
           name="contactInfo"
           placeholder="Contact Info"
           value={form.contactInfo}
@@ -234,18 +275,23 @@ export default function Admin() {
           className="py-2"
         />
 
-        <div className="flex gap-2">
+        <div className="flex gap-3">
           <button
             onClick={handleSubmit}
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+            disabled={loading}
+            className="bg-green-700 text-white px-5 py-2 rounded-lg hover:bg-green-800 transition disabled:opacity-50"
           >
-            {editingId ? "Update Product" : "Add Product"}
+            {loading
+              ? "Uploading..."
+              : editingId
+                ? "Update Product"
+                : "Add Product"}
           </button>
 
           {editingId && (
             <button
               onClick={resetForm}
-              className="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400 transition"
+              className="bg-gray-300 text-gray-800 px-5 py-2 rounded-lg hover:bg-gray-400 transition"
             >
               Cancel Edit
             </button>
@@ -253,26 +299,29 @@ export default function Admin() {
         </div>
       </div>
 
-      <hr className="my-8 border-gray-300" />
-
+      {/* PRODUCTS LIST */}
       <h3 className="text-xl font-semibold mb-4">📦 Existing Products</h3>
 
       <div className="space-y-4">
         {products.map((p) => (
           <div
             key={p.id}
-            className="border rounded p-4 flex flex-col sm:flex-row sm:justify-between items-start sm:items-center gap-2"
+            className="border rounded-lg p-4 bg-white shadow-sm flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3"
           >
             <div>
-              <strong className="text-gray-800">{p.name}</strong> —{" "}
-              <span className="text-gray-600">{p.price}</span>
+              <strong className="text-gray-800">{p.name}</strong>
+              <p className="text-gray-600 text-sm">{p.price}</p>
             </div>
-            <div className="flex gap-2 mt-2 sm:mt-0">
-              <button className="text-blue-500 hover:underline" onClick={() => handleEdit(p)}>
+
+            <div className="flex gap-3">
+              <button
+                className="text-blue-600 hover:underline"
+                onClick={() => handleEdit(p)}
+              >
                 ✏️ Edit
               </button>
               <button
-                className="text-red-500 hover:underline"
+                className="text-red-600 hover:underline"
                 onClick={() => handleDelete(p.id)}
               >
                 🗑️ Delete
